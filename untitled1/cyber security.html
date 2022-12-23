@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style-fields.css">
+    <link rel="icon" href="Backgrounds/Home/logo.svg">
+    <title>Cyber security</title>
+</head>
+<body>
+  <section class="main" id="main" style="--homeImageSrc: url(Backgrounds/Home/audience.jpeg)">
+    <div>
+      <h2>Welcome at<br><span>Security planet</span></h2>
+      <h3>We brought the science to you</h3>
+      <a href="main page.html" class="main-btn">Home Page</a>
+      <a href="#article" class="main-btn">article</a>
+      <a href="#road map" class="main-btn">Road map</a>
+      <a href="#video" class="main-btn">Video</a>
+    </div>
+  </section>
+  <section class="main" id="second" style="--homeImageSrc: url(Backgrounds/Home/test.jpg)">
+    <h2 class="title" id="article"><span>Cyber security</span></h2>
+    <div class="content">
+    <p>Cyber security is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks.
+        <br>It's also known as information technology security or electronic information security. The term applies in a variety of contexts, from business to mobile computing, and can be divided into a few common categories.
+    </p>
+    <p></p>
+    <ul>
+        <li>Network security is the practice of securing a computer network from intruders, whether targeted attackers or opportunistic malware.</li>
+        <li> Application security focuses on keeping software and devices free of threats. A compromised application could provide access to the data its designed to protect.<br>
+            Successful security begins in the design stage, well before a program or device is deployed.</li>
+        <li>Information security protects the integrity and privacy of data, both in storage and in transit.</li>
+        <li>Operational security includes the processes and decisions for handling and protecting data assets.
+            The permissions users have when accessing a network and the procedures that determine how and where data may be stored or shared all fall under this umbrella.</li>
+        <li> Disaster recovery and business continuity define how an organization responds to a cyber-security incident or any other event that causes the loss of operations or data.
+            Disaster recovery policies dictate how the organization restores its operations and information to return to the same operating capacity as before the event.
+            Business continuity is the plan the organization falls back on while trying to operate without certain resources.</li>
+    </ul>
+    <p>
+        The global cyber threat continues to evolve at a rapid pace, with a rising number of data breaches each year.
+        <br>A report by RiskBased Security revealed that a shocking 7.9 billion records have been exposed by data breaches in the first nine months of 2019 alone.
+        <br>This figure is more than double (112%) the number of records exposed in the same period in 2018.
+    </p>
+    </div>
+  </section>
+  <section class="main" id="road map" style="--homeImageSrc: url(Backgrounds/Home/art.jpg)">
+    <h2 class="title"><span>road map</span></h2>
+  <img src="Backgrounds/Home/cypersec.jpeg" alt="machine learning road map">
+  </section>
+  <section class="main" id="video" style="--homeImageSrc: url(Backgrounds/Home/test.jpg)">
+    <h2 class="title"><span>video</span></h2>
+    <iframe width="100%" height="500"
+          src="https://www.youtube.com/embed/z5nc9MDbvkw">
+  </iframe>
+  </section>
+  <button onclick="gotop()" class="Tbutton"> <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="To-Top-Icon"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M7 11l5-5m0 0l5 5m-5-5v12"
+    />
+  </svg></button>
+  <script>
+    let Tbutton = document.getElementsByClassName("Tbutton");
+    
+    window.onscroll = function() {appearFunction()};
+    
+    function appearFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        Tbutton[0].style.opacity = 100;
+      } else {
+        Tbutton[0].style.opacity = 0;
+      }
+    }
+    function gotop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</body>
+</html>

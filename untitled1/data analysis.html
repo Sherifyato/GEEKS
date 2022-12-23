@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style-fields.css">
+  <link rel="icon" href="Backgrounds/Home/logo.svg">
+  <title>data analysis</title>
+</head>
+<body>
+  <section class="main" id="main" style="--homeImageSrc: url(Backgrounds/Home/audience.jpeg)">
+    <div>
+      <h2>Welcome at<br><span>Data planet</span></h2>
+      <h3>We brought the science to you</h3>
+      <a href="main page.html" class="main-btn">Home Page</a>
+      <a href="#article" class="main-btn">article</a>
+      <a href="#road map" class="main-btn">Road map</a>
+      <a href="#video" class="main-btn">Video</a>
+    </div>
+  </section>
+  <section class="main" id="second" style="--homeImageSrc: url(Backgrounds/Home/test.jpg)">
+    <h2 class="title" id="article"><span>data analysis</span></h2>
+    <div class="content">
+    <p> data analyst collects, cleans, and interprets data sets in order to answer a question or solve a problem. They work in many industries, including business, finance, criminal justice, science, medicine, and government.
+
+      What kind of customers should a business target in its next ad campaign? What age group is most vulnerable to a particular disease? What patterns in behavior are connected to financial fraud?
+
+      These are the types of questions you might be pressed to answer as a data analyst. Read on to find out more about what a data analyst is, what skills you'll need, and how you can start on a path to become one.
+
+      What is data analysis?
+      Data analysis is the process of gleaning insights from data to inform better business decisions. The process of analyzing data typically moves through five iterative phases:
+    </p>
+    <p></p>
+    <ul>
+        <li>Identify the data you want to analyze</li>
+        <li>Collect the data</li>
+        <li>Clean the data in preparation for analysis</li>
+        <li>Analyze the data</li>
+        <li>Interpret the results of the analysis</li>
+    </ul>
+    <p>
+      Data analysis can take different forms, depending on the question you’re trying to answer. You can read more about the types of data analysis here.
+      Briefly, descriptive analysis tells us what happened, diagnostic analysis tells us why it happened,
+      predictive analytics forms projections about the future, and prescriptive analysis creates actionable advice on what actions to take.
+    </p>
+    </div>
+  </section>
+  <section class="main" id="road map" style="--homeImageSrc: url(Backgrounds/Home/art.jpg)">
+    <h2 class="title"><span>road map</span></h2>
+  <img src="Backgrounds/Home/DataAnalystRoadmap.png" alt="data analysis road map">
+  </section>
+  <section class="main" id="video" style="--homeImageSrc: url(Backgrounds/Home/test.jpg)">
+    <h2 class="title"><span>video</span></h2>
+    <iframe width="100%" height="500"
+          src="https://www.youtube.com/embed/yDG5KiiOZcQ">
+    </iframe>
+  </section>
+  <button onclick="gotop()" class="Tbutton"> <svg
+    xmlns="http://www.w3.org/2000/svg"
+    class="To-Top-Icon"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke="currentColor"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M7 11l5-5m0 0l5 5m-5-5v12"
+    />
+  </svg></button>
+  <script>
+    let Tbutton = document.getElementsByClassName("Tbutton");
+    window.onscroll = function() {appearFunction()};
+    function appearFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        Tbutton[0].style.opacity = 100;
+      } else {
+        Tbutton[0].style.opacity = 0;
+      }
+    }
+    function gotop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+</body>
+</html>
